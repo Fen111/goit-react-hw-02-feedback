@@ -1,7 +1,11 @@
 .statList {
   padding: 0;
   list-style: none;
-  background-color: khaki;
+}
+
+.statItem {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .statButton {

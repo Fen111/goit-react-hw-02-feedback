@@ -4,11 +4,11 @@ export default function Statistics(props) {
   return (
     <>
       <ul className={s.statList}>
-        <li>good: {good}</li>
-        <li>neutral: {neutral}</li>
-        <li>bad: {bad}</li>
-        <li>Total: {total}</li>
-        <li>Positive feedback: {positivePercentage}%</li>
+        <li className={s.statItem}>good: {good}</li>
+        <li className={s.statItem}>neutral: {neutral}</li>
+        <li className={s.statItem}>bad: {bad}</li>
+        <li className={s.statItem}>Total: {total}</li>
+        <li className={s.statItem}>Positive feedback: {positivePercentage}%</li>
       </ul>
       <button
         className={s.statButton}
@@ -17,7 +17,7 @@ export default function Statistics(props) {
           onReset();
         }}
       >
-        Clear statistics
+        Clear
       </button>
     </>
   );
