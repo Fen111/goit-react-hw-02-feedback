@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import s from './Section.module.css';
 export default function Section({ title, children }) {
   return (
@@ -6,4 +7,8 @@ export default function Section({ title, children }) {
       {children}
     </>
   );
+}
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired
 }
